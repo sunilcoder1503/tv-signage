@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Signage Wrapper 45%</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    .iframe-container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 222.2%;  /* Offsets the 45% zoom layout */
+      height: 222.2%; /* Offsets the 45% zoom layout */
+      border: none;
+      transform: scale(0.45); /* Forces exactly 45% zoom */
+      transform-origin: top left; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <!-- REPLACE THE URL BELOW WITH YOUR TARGET WEBSITE -->
+    <iframe src="https://example.com"></iframe>
+  </div>
+
+</body>
+</html>
